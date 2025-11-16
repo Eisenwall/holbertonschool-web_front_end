@@ -4,12 +4,12 @@ html {
 }
 
 :root {
-    --color-primary: #d73953;
+    --color-primary: #D73953;
     --color-black: #090909;
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
-    --text-color: var(--color-black);
+    --text-color: var(--color-primary);
 
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -28,7 +28,6 @@ html {
     --line-height-big: 1.8;
 
     --section-header-align: center;
-
     --section-tagline-transform: uppercase;
 
     --section-title-margin: 0;
@@ -36,35 +35,11 @@ html {
 }
 
 body {
+    color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
-    color: var(--text-color);
     line-height: var(--line-height-base);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
-}
-
-.section-header {
-    text-align: var(--section-header-align);
-}
-
-.section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-}
-
-.section-tagline {
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
 }
 
 a[href] {
@@ -90,4 +65,28 @@ a[href]:active {
 
 .card-category {
     color: var(--color-primary);
+}
+
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
 }
